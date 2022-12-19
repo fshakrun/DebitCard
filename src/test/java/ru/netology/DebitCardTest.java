@@ -54,7 +54,7 @@ public class DebitCardTest {
     // Ввод валидных данных с дефисом, флажок выставлен
     @Test
     void shouldSendValidateHyphen() {
-        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Кузьма-Петров");
+        driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Кузьма Петров-Водкин");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79112223344");
         driver.findElement(By.className("checkbox__box")).click();
         driver.findElement(By.cssSelector("[type=button]")).click();
